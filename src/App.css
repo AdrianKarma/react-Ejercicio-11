@@ -1,8 +1,8 @@
-.CardCita{
+.CardNoticia{
   width: 450px;
   margin-left: 5px;
-  margin-right: 5px
-  ;
+  margin-right: 5px;
+  background-color: lightgrey;
 }
 
 .Master{display: flex;
@@ -19,4 +19,8 @@
 }
 .tituloNoticia{
   font-Weight: bold;
+}
+
+.CardBorde{
+background-color: grey;
 }

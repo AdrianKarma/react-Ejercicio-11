@@ -4,8 +4,8 @@ import defaultImage from "../img/404ZonaCode.png";
 const CardNoticias = ({noticia}) => {
     return (
         <section className="mt-2 d-flex">
-             <Card className="CardCita">
-          <Card.Header><h1><Image src={noticia.image_url||defaultImage} className='imagenNoticia' /></h1>
+             <Card className="CardNoticia">
+          <Card.Header className="CardBorde"><h1><Image src={noticia.image_url||defaultImage} className='imagenNoticia' /></h1>
           <Form.Label className="">{noticia.source_url} </Form.Label>
             
           </Card.Header>
@@ -33,7 +33,7 @@ const CardNoticias = ({noticia}) => {
       </Form.Group>
        */} 
       </Card.Body>
-      <Card.Footer>  <Button variant="dark" href={noticia.link}  target="_blank">
+      <Card.Footer className="CardBorde">  <Button variant="dark" href={noticia.link}  target="_blank">
           Ver noticia completa
         </Button></Card.Footer>
       </Card>
